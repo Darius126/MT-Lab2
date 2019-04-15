@@ -1,47 +1,43 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <title>Lab3 - VR application</title>
-    <meta name="description" content="3 Laboratorinis darbas"></meta>
-    <script src="https://aframe.io/releases/0.9.0/aframe.min.js"></script>
-    <script src="js/aframe-pointcloud-component.js"></script>
-	 <script src="https://unpkg.com/aframe-particle-system-component@1.0.9/dist/aframe-particle-system-component.min.js"></script>
-	 <script src="https://unpkg.com/aframe-gradient-sky@1.0.4/dist/gradientsky.min.js"></script>
-	 <script src="https://unpkg.com/aframe-animation-component@3.2.1/dist/aframe-animation-component.min.js"></script>
-	 </head>
-  <body>
-    <a-scene>
-       <a-assets>
-	   
-        <img id="groundTexture" src="https://cdn.aframe.io/a-painter/images/floor.jpg">
-        <img id="skyTexture" src="https://cdn.aframe.io/a-painter/images/sky.jpg">
-		
-       </a-assets>
 
-      <a-scene>
+<head>
+	<meta charset="utf-8">
+	<title>Lab3 - VR application</title>
+	<meta name="description" content="3 Laboratorinis darbas">
+	</meta>
+	<script src="https://aframe.io/releases/0.9.0/aframe.min.js"></script>
+	<script src="js/aframe-pointcloud-component.js"></script>
+	<script
+		src="https://unpkg.com/aframe-particle-system-component@1.0.9/dist/aframe-particle-system-component.min.js"></script>
+	<script src="https://unpkg.com/aframe-gradient-sky@1.0.4/dist/gradientsky.min.js"></script>
+	<script src="https://unpkg.com/aframe-animation-component@3.2.1/dist/aframe-animation-component.min.js"></script>
+</head>
+
+<body>
+	<a-scene>
+		
+		<a-cylinder src="https://cdn.aframe.io/a-painter/images/floor.jpg" radius="30" height="0.1"></a-cylinder>
+		<a-sky src="https://cdn.aframe.io/a-painter/images/sky.jpg" theta-length="90" radius="30"></a-sky>
+
+
 		<a-box position="-3 0.5 -3" rotation="0 45 0" color="#4CC3D9"></a-box>
 		<a-sphere position="3 2 -3" radius="1" color="#EF2D5E"></a-sphere>
 		<a-cylinder position="3 0.75 -3" radius="0.5" height="1.5" color="#FFC65D"></a-cylinder>
-		<a-plane position="0 0 0" rotation="-90 0 0" width="150" height="150" color="#5BC1B4"></a-plane>
-		<a-sky color="#ECACAC"></a-sky>
 		
-		<a-entity id="sphere" geometry="primitive: sphere"
-                material="color: black; shader: flat"
-                position="-2.95 5 -5"
-                light="type: point; color: white; intensity: 1"
-                animation="property: position; easing: easeInOutQuad; dir: alternate; dur: 10000; to: 3 5 -5; loop: true"></a-entity>
-	  
-		<a-entity geometry="primitive: sphere; radius: 1"
-		light="type: point; color: red; intensity: 1"
-		material="color: white; shader: flat; src: glow.jpg"
-		position="-3 5 -5"
-		></a-entity>
-		
-		 
-		
+	
+		<a-entity id="sphere" geometry="primitive: sphere" material="color: black; shader: flat" position="-2.95 5 -5"
+			light="type: point; color: white; intensity: 1"
+			animation="property: position; easing: easeInOutQuad; dir: alternate; dur: 10000; to: 3 5 -5; loop: true">
+		</a-entity>
+
+		<a-entity geometry="primitive: sphere; radius: 1" light="type: point; color: white; intensity: 5"
+			material="color: white; shader: flat; src: glow.jpg" position="-3 5 -5"></a-entity>
+
+
 		<a-entity particle-system="preset: snow" position="0 0 -10"></a-entity>
-	  </a-scene>
+
 	</a-scene>
-  </body>
+</body>
+
 </html>
