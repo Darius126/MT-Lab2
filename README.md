@@ -7,6 +7,7 @@ Per google Chrome neveikia kaikurios funkcijos.
 
 
 
+
 Šio laboratorinio darbo tikslas - sukurti savo virtualiosios realybės (VR) taikomąją programėlę (aplikaciją).
 LT
 Tokių programėlių kūrimui yra prieinami keli įrankiai. Vienas jų yra A-frame. Galima peržiūrėti kaip veikia A-frame grįsti pavyzdžiai čia: https://aframe.io/aframe/examples/
