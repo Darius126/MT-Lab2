@@ -1,4 +1,11 @@
-# MT-Lab2
+﻿# MT-Lab2
+
+Išbandyta naudojant firefox ir microsoft Edge naršykles (gerai veikia)
+Per google Chrome neveikia kaikurios funkcijos.
+
+
+
+
 
 Šio laboratorinio darbo tikslas - sukurti savo virtualiosios realybės (VR) taikomąją programėlę (aplikaciją).
 LT
